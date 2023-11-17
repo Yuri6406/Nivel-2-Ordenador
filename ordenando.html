@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Ordenando valores</h1>
+    
+    <div id="caixa-principal">
+        <label for="valor">Valor</label><input type="number" id="valor">
+
+        <button id="add" onclick="add()">Adicionar</button>
+
+        <select name="sort" id="sort">
+            <option value="bubble" selected>Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="quick">Quick Sort</option>
+        </select>
+
+        <button id="ordenar" onclick="ordenar()">Ordenar</button>
+
+        <button id="misturar" onclick="misturar()">Misturar</button>
+        
+        
+    </div>
+    <ul id="valores">
+    </ul>
+
+    <ul id = "novosValores"> 
+    </ul>
+
+    <script src="ordenando.js"></script>
+</body>
+
+</html>
